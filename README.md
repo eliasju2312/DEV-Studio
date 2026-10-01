@@ -1,20 +1,33 @@
-# DEV Studio · Portafolio
+# DEV Studio
 
-Proyecto de demostración en HTML, CSS y JavaScript puro. Sin dependencias, instalación ni claves API. Diseño adaptable y controles accesibles.
+Plantilla de portafolio para desarrolladores, creada con HTML, CSS y JavaScript.
 
-## Usar
-Abre `index.html` en tu navegador. También puedes servirlo con `python -m http.server 8000` y visitar `http://localhost:8000`.
+## Funcionalidades
+- Presentación personal y sección de habilidades.
+- Proyectos con filtros por categoría.
+- Enlaces a demostraciones.
+- Temporizador de concentración de 25 minutos.
+- Controles para iniciar, pausar, continuar y reiniciar.
+- Sección de contacto por correo.
+- Diseño adaptable a celulares y computadoras.
 
-## Subir a GitHub
-1. Crea un repositorio con el nombre `03-dev-portfolio`.
-2. En **Add file → Upload files**, sube el contenido de esta carpeta (index.html debe estar en la raíz).
-3. Guarda con **Commit changes**.
-4. Para mostrar la página, configura GitHub Pages con la rama que contiene los archivos y la carpeta raíz.
+## Tecnologías
+- **HTML:** estructura del portafolio.
+- **CSS:** estilos y diseño responsive.
+- **JavaScript:** filtros y funcionamiento del temporizador.
+
+## Archivos
+- `index.html`: contenido y estructura.
+- `styles.css`: estilos visuales.
+- `script.js`: interacciones y temporizador.
+- `favicon.svg`: ícono de la página.
+- `GUIA-CODIGO.md`: explicación del código paso a paso.
+
+## Ejecutar
+Descarga el proyecto y abre `index.html` en tu navegador. No requiere instalar dependencias.
 
 ## Personalizar
-Edita el contenido en `index.html`, la paleta en `styles.css` y los datos e interacciones en `script.js`.
+Reemplaza el nombre, correo, presentación y habilidades por tus datos. Si las demostraciones están en repositorios separados, actualiza sus enlaces con las direcciones publicadas.
 
 ## Alcance
-Proyecto frontend de demostración. No tiene servidor, cuentas de usuario ni integraciones externas.
-
-Creado con asistencia de IA; revisa y adapta el código para tu portafolio.
+Proyecto frontend. El temporizador se reinicia al recargar la página y el enlace de contacto abre la aplicación de correo del usuario.
