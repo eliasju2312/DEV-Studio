@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="es">
+  <!-- PASO 1: Metadatos y conexión con CSS y JavaScript. -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="DEV Studio · Portafolio: proyecto web de tecnología con diseño responsive.">
+    <title>
+      DEV Studio · Portafolio
+    </title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer>
+    </script>
+  </head>
+  <body>
+    <!-- PASO 2: Encabezado y navegación. -->
+    <header>
+      <a class="brand" href="#">
+        &lt;
+        <span>
+          dev
+        </span>
+        /&gt;
+      </a>
+      <nav aria-label="Principal">
+        <a href="#proyectos">
+          Proyectos
+        </a>
+        <a href="#sobre">
+          Sobre mí
+        </a>
+        <a href="#contacto">
+          Contacto
+        </a>
+      </nav>
+    </header>
+    <!-- PASO 3: Contenido principal de la página. -->
+    <main>
+      <section class="hero">
+        <div>
+          <span class="eyebrow">
+            Portafolio de ejemplo / Frontend
+          </span>
+          <h1>
+            Ideas claras.
+            <br>
+            <span>
+              Código que
+              <br>
+              las hace realidad.
+            </span>
+          </h1>
+          <p>
+            Hola, soy Alex. Me interesa construir interfaces intuitivas y convertir problemas cotidianos en proyectos digitales.
+          </p>
+          <a class="button" href="#proyectos">
+            Ver proyectos
+          </a>
+        </div>
+        <div class="code" aria-label="Fragmento de código decorativo">
+          <span class="muted">
+            // construir, aprender, repetir
+          </span>
+          <br>
+          <em>
+            const
+          </em>
+          developer = {
+          <br>
+          &nbsp; name:
+          <b>
+            "Alex"
+          </b>
+          ,
+          <br>
+          &nbsp; focus:
+          <b>
+            "Frontend"
+          </b>
+          ,
+          <br>
+          &nbsp; tools: [
+          <b>
+            "HTML", "CSS", "JS"
+          </b>
+          ],
+          <br>
+          &nbsp; curiosity:
+          <b>
+            true
+          </b>
+          <br>
+          };
+          <br>
+          <br>
+          <em>
+            function
+          </em>
+          create(idea) {
+          <br>
+          &nbsp;
+          <em>
+            return
+          </em>
+          idea +
+          <b>
+            " código"
+          </b>
+          ;
+          <br>
+          }
+        </div>
+      </section>
+      <section id="proyectos">
+        <div class="sectionhead">
+          <h2>
+            Proyectos seleccionados
+          </h2>
+          <div class="filters" id="filters">
+            <button data-filter="Todos" aria-pressed="true">
+              Todos
+            </button>
+            <button data-filter="Interfaces" aria-pressed="false">
+              Interfaces
+            </button>
+            <button data-filter="Herramientas" aria-pressed="false">
+              Herramientas
+            </button>
+          </div>
+        </div>
+        <div class="grid">
+          <article class="card" data-kind="Interfaces">
+            <span class="project-no">
+              01
+            </span>
+            <h3>
+              NOVA Tech
+            </h3>
+            <p>
+              Catálogo responsive con filtros de productos y carrito de demostración.
+            </p>
+            <div class="skills">
+              <span>
+                HTML
+              </span>
+              <span>
+                CSS
+              </span>
+              <span>
+                JavaScript
+              </span>
+            </div>
+            <p>
+              <a href="../01-nova-tech/index.html">
+                Ver demo de tienda
+              </a>
+            </p>
+          </article>
+          <article class="card" data-kind="Interfaces">
+            <span class="project-no">
+              02
+            </span>
+            <h3>
+              BYTE Journal
+            </h3>
+            <p>
+              Blog educativo con búsqueda, categorías y lectura en ventanas modales.
+            </p>
+            <div class="skills">
+              <span>
+                HTML
+              </span>
+              <span>
+                CSS
+              </span>
+              <span>
+                JavaScript
+              </span>
+            </div>
+            <p>
+              <a href="../02-byte-journal/index.html">
+                Ver demo de blog
+              </a>
+            </p>
+          </article>
+          <article class="card" data-kind="Herramientas">
+            <span class="project-no">
+              03
+            </span>
+            <h3>
+              Focus Timer
+            </h3>
+            <p>
+              Un temporizador de 25 minutos para dedicar un bloque a tu próximo objetivo.
+            </p>
+            <p class="stat" id="timer" role="timer" aria-label="Tiempo restante">
+              25:00
+            </p>
+            <button id="start">
+              Iniciar
+            </button>
+            <button id="reset">
+              Reiniciar
+            </button>
+          </article>
+        </div>
+      </section>
+      <section id="sobre" class="about">
+        <h2>
+          Siempre hay algo
+          <br>
+          nuevo que aprender.
+        </h2>
+        <div>
+          <p>
+            Este perfil es una plantilla: reemplaza el nombre, la presentación y las habilidades con tus datos reales antes de publicarlo.
+          </p>
+          <p>
+            Mi enfoque combina estructura semántica, diseño adaptable e interacciones sencillas. Me gusta aprender construyendo y mejorar cada proyecto con lo que descubro en el siguiente.
+          </p>
+          <div class="skills">
+            <span>
+              HTML semántico
+            </span>
+            <span>
+              CSS responsive
+            </span>
+            <span>
+              JavaScript
+            </span>
+            <span>
+              Git
+            </span>
+          </div>
+        </div>
+      </section>
+      <section id="contacto" class="contact">
+        <span class="eyebrow">
+          Hablemos de tu próxima idea
+        </span>
+        <h2>
+          Los buenos proyectos empiezan
+          <br>
+          con una conversación.
+        </h2>
+        <p>
+          Sustituye este correo de ejemplo por tu dirección de contacto.
+        </p>
+        <a class="button" href="mailto:tu-correo@example.com">
+          tu-correo@example.com
+        </a>
+      </section>
+    </main>
+    <!-- PASO 4: Pie de página. -->
+    <footer>
+      <strong>
+        &lt;dev/&gt; Studio
+      </strong>
+      <span>
+        Portafolio de demostración · Personalízalo a tu estilo
+      </span>
+    </footer>
+  </body>
+</html>
